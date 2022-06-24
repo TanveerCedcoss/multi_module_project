@@ -1,0 +1,20 @@
+<h2>Login using this form</h2>
+
+<form action="/public/login" method="post">
+    <p>
+        <label for="email">E-Mail</label>
+        <?php echo $this->tag->textField("email"); ?>
+    </p>
+
+    <p>
+        <label for="password">Password</label>
+        <?php echo $this->tag->passwordField("password"); ?>
+    </p>
+
+    <p>
+        <?php echo $this->tag->submitButton("Sign In"); ?>
+    </p>
+
+</form>
+
+<a href="/admin/signup/index">Signup!</a>

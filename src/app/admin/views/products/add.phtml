@@ -1,0 +1,51 @@
+<h2>Add products</h2>
+
+<?php echo $this->tag->form(""); ?>
+
+<table>
+    <tr>
+        <td>
+            <label for="name">Name</label>
+        </td>
+        <td>
+            <?php echo $this->tag->textField("name"); ?>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <label for="category">Category</label>
+        </td>
+        <td>
+            <?php echo $this->tag->textField("category"); ?>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <label for="price">Price</label>
+        </td>
+        <td>
+            <?php echo $this->tag->numericField("price"); ?>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <label for="stock">Stock</label>
+        </td>
+        <td>
+            <?php echo $this->tag->numericField("stock"); ?>
+        </td>
+    </tr>
+
+</table>
+<p>
+    <?php echo $this->tag->submitButton("Add product"); ?>
+</p>
+</form>
+
+
+
+
+<br />
