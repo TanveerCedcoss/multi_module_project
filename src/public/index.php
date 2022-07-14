@@ -117,6 +117,12 @@ class Application extends BaseApplication
                 'action'     => 1,
             ])->setName('admin-signup');
 
+            $router->add("/merchant", [
+                'module'     => 'merchant',
+                'controller' => 'home',
+                'action'     => 'index',
+            ]);
+
 
             return $router;
         });
@@ -138,6 +144,10 @@ class Application extends BaseApplication
             'admin'  => [
                 'className' => 'Multiple\Admin\Module',
                 'path'      => '../app/admin/Module.php'
+            ],
+            'merchant' => [
+                'className' => 'Multiple\Merchant\Module',
+                'path'      => '../app/merchant/Module.php'
             ]
         ]);
 
